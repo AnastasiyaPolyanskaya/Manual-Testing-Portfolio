@@ -1,2 +1,2 @@
-# QA-BugReports
+# QA Manual Testing Projects
 Мои баг-репорты и тестовая документация (проверка приложений и веб сайтов (на моб устройствах/web/smartv )
