@@ -550,6 +550,8 @@ python_numeric_practice/
 ├── task_6_sum_input.py
 └── README.md
 
+C:\Users\DOLGO\Documents\GitHub\Пустая\QA-103\Для портфолио ручного тестирования
+
 
 
 
