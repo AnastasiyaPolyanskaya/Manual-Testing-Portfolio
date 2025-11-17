@@ -741,4 +741,131 @@ python_string_practice/
 Тестирование выявило две проблемы: ошибку интерфейса (вибрация) и критический функциональный дефект (отсутствие PIN-проверки для контента 18+).  
 Рекомендуется исправить логику родительского контроля и провести повторное тестирование после релиза фиксов.
 
+
+
+
+Project №7.3: Python — Работа со строками (String Practice)
+Описание
+
+Учебный проект для практики работы со строковым типом данных в Python.
+
+Окружение
+
+Среда: PyCharm Community Edition
+
+Язык: Python 3.12
+
+ОС: Windows 11
+
+Тип практики: исследовательская работа со строками (string)
+
+Задания
+1. Вывод строки полностью
+
+Файл: task_1_print_string.py
+
+text = input()
+print(text)
+
+
+Описание: программа принимает строку и выводит её целиком.
+
+2. Вывод второго символа
+
+Файл: task_2_second_char.py
+
+text = input()
+print(text[1])
+
+
+Описание: выводит второй символ строки (индекс 1).
+
+3. Первые четыре символа
+
+Файл: task_3_first_four.py
+
+text = input()
+print(text[:4])
+
+
+Описание: делает срез от начала до индекса 4 (не включая).
+
+4. Чётные индексы
+
+Файл: task_4_even_indexes.py
+
+text = input()
+print(text[::2])
+
+
+Описание: выводит каждый второй символ строки (step = 2).
+
+5. Предпоследний символ
+
+Файл: task_5_second_from_end.py
+
+text = input()
+print(text[-2])
+
+
+Описание: использует отрицательный индекс для доступа к символам с конца.
+
+6. Удаление символа из строки
+
+Файл: task_6_delete_char.py
+
+text = input()
+char = input()
+print(text.replace(char, ""))
+
+
+Описание: удаляет все вхождения указанного символа.
+
+7. Форматирование имени
+
+Файл: task_7_format_name.py
+
+first = input()
+last = input()
+a = "{} {}"
+print(a.format(first, last))
+
+
+Описание: объединяет две строки через пробел с помощью format.
+
+8. Работа с регистром
+
+Файл: task_8_cases.py
+
+str1 = input().upper()
+str2 = input().lower()
+print(str1 + " " + str2)
+
+
+Описание: первое слово в верхний регистр, второе — в нижний.
+
+9. Разворот строки
+
+Файл: task_9_reverse.py
+
+text = input()
+print(text[::-1])
+
+
+Описание: вывод строки в обратном порядке.
+
+Структура проекта
+python_string_practice/
+│
+├── task_1_print_string.py
+├── task_2_second_char.py
+├── task_3_first_four.py
+├── task_4_even_indexes.py
+├── task_5_second_from_end.py
+├── task_6_delete_char.py
+├── task_7_format_name.py
+├── task_8_cases.py
+├── task_9_reverse.py
+└── README.md
+
 C:\Users\DOLGO\Documents\GitHub\Пустая\QA-103\Для портфолио ручного тестирования
