@@ -868,4 +868,163 @@ python_string_practice/
 ├── task_9_reverse.py
 └── README.md
 
+
+Проект №7.4: Python - Строки и f-строки
+
+Описание
+
+Учебный проект для портфолио тестировщика.
+Содержит простые программы на Python, которые тренируют:
+
+работу со строками;
+
+срезы строк;
+
+изменение регистра;
+
+удаление символов;
+
+f-строки для форматирования вывода;
+
+ввод данных через input() и преобразование типов.
+
+Все примеры можно запускать в PyCharm. Проект удобно показать на GitHub как практику базового Python.
+
+
+1. Строковые задачи (strings_basic/)
+1.1. task_01_echo_input.py
+
+Принимает одну строку и выводит её без изменений.
+
+text = input()
+print(text)
+
+1.2. task_02_second_char.py
+
+Выводит второй символ строки.
+
+text = input()
+print(text[1])
+
+1.3. task_03_first_four_chars.py
+
+Выводит первые четыре символа строки с помощью среза.
+
+text = input()
+print(text[:4])
+
+1.4. task_04_even_indexes.py
+
+Выводит символы с чётными индексами (0, 2, 4, …).
+
+text = input()
+print(text[0::2])
+
+1.5. task_05_penultimate_char.py
+
+Выводит предпоследний символ строки.
+
+text = input()
+print(text[-2])
+
+1.6. task_06_last_word_slice.py
+
+Берёт последнее слово с конца строки с помощью отрицательного индекса.
+
+Пример: из строки "Привет, мир!" получить "мир!".
+
+text = "Привет, мир!"
+last_word = text[-4:]
+print(last_word)   # мир!
+
+1.7. task_07_remove_char.py
+
+Принимает строку и символ, удаляет все вхождения этого символа.
+
+text = input()
+ch = input()
+
+result = text.replace(ch, "")
+print(result)
+
+1.8. task_08_case_transform.py
+
+Принимает две строки:
+первую делает в верхнем регистре, вторую в нижнем, выводит через пробел.
+
+str_1 = input()
+str_2 = input()
+
+result = str_1.upper() + " " + str_2.lower()
+print(result)
+
+2. Задачи на f-строки (f_strings/)
+2.1. task_01_hello_name.py
+
+Использование f-строки для вывода имени.
+
+name = input()
+print(f"Меня зовут {name}")
+
+2.2. task_02_two_words_register.py
+
+Первая строка — в верхнем регистре, вторая — в нижнем, между ними пробел.
+То же, что в строковой задаче, но через f-строку.
+
+str_1 = input()
+str_2 = input()
+
+print(f"{str_1.upper()} {str_2.lower()}")
+
+2.3. task_03_film_age_2024.py
+
+Принимает название фильма и год выпуска.
+Считает, сколько лет фильму исполнится в 2024 году.
+
+film = input()          # например: Титаник
+year = int(input())     # например: 1997
+
+age = 2024 - year
+print(f"Фильму {film} в 2024 году исполнится {age}")
+
+2.4. task_04_currency_exchange.py
+
+Принимает сумму в рублях, курс доллара и курс евро.
+Считает, сколько долларов и евро можно купить, результат выводит через f-строку.
+
+num1 = int(input())   # количество рублей
+num2 = int(input())   # курс доллара
+num3 = int(input())   # курс евро
+
+dollars = int(num1 / num2)
+euros = int(num1 / num3)
+
+print(
+    f"У пользователя в наличии {num1} рублей, "
+    f"за них он может получить {dollars} долларов "
+    f"или {euros} евро"
+
+
+    
+Структура проекта
+python_strings_and_fstrings/
+│
+├── strings_basic/
+│   ├── task_01_echo_input.py
+│   ├── task_02_second_char.py
+│   ├── task_03_first_four_chars.py
+│   ├── task_04_even_indexes.py
+│   ├── task_05_penultimate_char.py
+│   ├── task_06_last_word_slice.py
+│   ├── task_07_remove_char.py
+│   └── task_08_case_transform.py
+│
+├── f_strings/
+│   ├── task_01_hello_name.py
+│   ├── task_02_two_words_register.py
+│   ├── task_03_film_age_2024.py
+│   └── task_04_currency_exchange.py
+│
+└── README.md
+
 C:\Users\DOLGO\Documents\GitHub\Пустая\QA-103\Для портфолио ручного тестирования
