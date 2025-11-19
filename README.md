@@ -1027,4 +1027,131 @@ python_strings_and_fstrings/
 │
 └── README.md
 
+
+
+Проект №7.5: Работа с вводом, выводом и функциями в Python
+
+Описание
+
+В проекте собраны примеры по теме переменные, ввод/вывод данных, функции, аргументы и возврат значений. Это практические мини‑задачи, выполненные для закрепления основ Python.
+
+Структура проекта
+
+Примеры сложения чисел через переменные
+
+Создание функции summ() с параметрами
+
+Передача аргументов по имени
+
+Функция приветствия hi()
+
+Использование переменных вне функции
+
+Ввод данных пользователя (input())
+
+Возврат значения из функции (return)
+
+Исходный код примеров
+1. Сложение переменных
+num1 = 10
+num2 = 20
+result = num1 + num2
+print(result)
+
+
+num1 = 30
+num2 = 40
+result = num1 + num2
+print(result)
+2. Создание функции для суммирования
+def summ(num1, num2):
+    result = num1 + num2
+    print(result)
+
+
+summ(10, 20)
+summ(30, 40)
+3. Передача аргументов по имени
+def summ(num1, num2):
+    result = num1 + num2
+    print(result)
+
+
+summ(num2="World", num1="Hello")
+4. Функция приветствия
+def hi(name):
+    print("Hello " + name)
+
+
+hi("Alex")
+5. Использование глобальной переменной
+name = "Alex"
+
+
+def hi(name):
+    print("Hello " + name)
+
+
+hi(name)
+6. Функция с несколькими параметрами
+name = "Alex"
+age = "32"
+
+
+def hi(name, age):
+    print("Меня зовут " + name + " мне " + age + " лет")
+
+
+hi(name, age)
+7. Работа с input()
+name = input()
+age = input()
+
+
+def hi(name, age):
+    print("Меня зовут " + name + " мне " + age + " лет")
+
+
+hi(name, age)
+8. Возврат значения из функции
+name = "Алекс"
+age = "32"
+
+
+def hi(name, age):
+    result = name + " " + age
+    return result
+
+
+h = hi(name, age)
+print(h)
+
+Структура проекта
+python_functions_basics_7_4/
+│
+├── variables_examples/
+│ ├── example_01_addition_10_20.py
+│ ├── example_02_addition_30_40.py
+│
+├── functions_summ/
+│ ├── summ_basic.py
+│ ├── summ_named_args.py
+│
+├── functions_hi/
+│ ├── hi_one_arg.py
+│ ├── hi_two_args.py
+│ ├── hi_with_globals.py
+│
+├── input_examples/
+│ ├── hi_input_version.py
+│
+├── return_examples/
+│ ├── hi_return.py
+│
+└── README.md
+
+
+
+
+
 C:\Users\DOLGO\Documents\GitHub\Пустая\QA-103\Для портфолио ручного тестирования
