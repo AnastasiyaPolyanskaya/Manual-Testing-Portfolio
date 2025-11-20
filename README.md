@@ -6,7 +6,7 @@
 
 ---
 
-## Проект №1 — Stepik.org (форма авторизации и регистрации)
+## Проект №1 - Stepik.org (форма авторизации и регистрации)
 
 **Тип проекта:** исследовательское тестирование (UI + функциональное + DevTools + эмулятор Android Studio)
 
@@ -1152,6 +1152,127 @@ python_functions_basics_7_4/
 
 
 
+Проект №7.6: Python - Функции и оператор return
+Описание
+
+Учебный проект для практики работы с функциями в Python, использованием параметров, возвратом значений с помощью return и последующим использованием результата.
+
+Окружение
+
+Среда: PyCharm Community Edition
+Язык: Python 3.12
+ОС: Windows 11
+Тип практики: исследовательская работа с функциями и оператором return
+
+Задания
+1. Функция суммы двух чисел
+
+Файл: task_1_sum.py
+
+def summ(a, b):
+    return a + b
+
+result = summ(5, 10)
+print(result)
+
+
+Описание: принимает два числа и возвращает их сумму.
+
+2. Функция среднего арифметического
+
+Файл: task_2_average.py
+
+def average(a, b, c):
+    return (a + b + c) / 3
+
+result = average(3, 6, 9)
+print(result)
+
+
+Описание: вычисляет среднее значение трёх чисел.
+
+3. Функция расчёта скидки
+
+Файл: task_3_discount.py
+
+def price_with_discount(price, percent):
+    return price - price * percent / 100
+
+result = price_with_discount(1000, 15)
+print(result)
+
+
+Описание: возвращает цену товара после применения скидки.
+
+4. Функции поиска максимума и минимума
+
+Файл: task_4_max_min.py
+
+def my_max(a, b):
+    if a > b:
+        return a
+    return b
+
+def my_min(a, b):
+    if a < b:
+        return a
+    return b
+
+print(my_max(10, 3))
+print(my_min(10, 3))
+
+
+Описание: самостоятельная реализация функций max и min.
+
+5. Использование результата функции в других вычислениях
+
+Файл: task_5_use_result.py
+
+def summ(a, b):
+    return a + b
+
+x = summ(5, 10)     # 15
+y = x + 20          # 35
+
+print(y)
+
+
+Описание: демонстрация того, что результат функции можно использовать дальше.
+
+6. Четыре математические функции (мини-калькулятор)
+
+Файл: task_6_calculator.py
+
+def summ(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    return a / b
+
+print(summ(5, 10))
+print(sub(10, 3))
+print(mul(2, 5))
+print(div(10, 2))
+
+
+Описание: базовые функции для простого калькулятора.
+
+Структура проекта
+python_functions_return/
+│
+├── task_1_sum.py
+├── task_2_average.py
+├── task_3_discount.py
+├── task_4_max_min.py
+├── task_5_use_result.py
+├── task_6_calculator.py
+└── README.md
 
 
 C:\Users\DOLGO\Documents\GitHub\Пустая\QA-103\Для портфолио ручного тестирования
