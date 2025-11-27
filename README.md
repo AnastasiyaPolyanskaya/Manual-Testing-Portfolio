@@ -1840,3 +1840,143 @@ Project_VK_Pets_NoDeletePhoto/
 └─ environment_info.md
 
 
+
+Проект №7.8: Python - Практика со списками, строками и циклами
+
+Описание
+Учебный проект для практики базовых операций Python: работа со списками, строками, циклами for, суммированием, поиском значений, вычислением средней величины, выбором элементов и сравнением данных.
+
+Окружение
+Среда: PyCharm Community Edition
+Язык: Python 3.12
+ОС: Windows 11
+Тип практики: исследовательская работа со списками и строками
+
+Задания
+
+Вывод элементов списка с чётными индексами
+Файл: task_1_even_indexes.py
+
+numbers = list(map(int, input().split()))
+
+for i in range(0, len(numbers), 2):
+    print(numbers[i])
+
+
+Описание: принимает список через ввод, выводит элементы, стоящие на чётных индексах.
+Пример ввода: 1 2 3 4 5 6 7 8 9 10
+Пример вывода: 1 3 5 7 9
+
+Среднее арифметическое списка
+Файл: task_2_average.py
+
+numbers = list(map(int, input().split()))
+average = sum(numbers) / len(numbers)
+print(average)
+
+
+Описание: вычисляет среднее значение списка.
+Пример ввода: 1 2 3 4 5 6 7 8 9 10
+Пример вывода: 5.5
+
+Вывод только букв строки
+Файл: task_3_only_letters.py
+
+a = input()
+
+for char in a:
+    if char.isalpha():
+        print(char)
+
+
+Описание: выводит только буквы строки, каждая буква с новой строки.
+Пример ввода: abracad5bra
+Пример вывода: a b r a c a d b r a
+
+Подсчёт количества конкретной буквы
+Файл: task_4_count_symbol.py
+
+a = input()
+b = input()
+
+count = 0
+
+for char in a:
+    if char == b:
+        count += 1
+
+print(count)
+
+
+Описание: считает, сколько раз буква встречается в строке.
+Пример ввода:
+abracad5bra
+a
+Пример вывода: 4
+
+Подсчёт количества букв a, b, i
+Файл: task_5_count_abi.py
+
+a = input()
+
+count = 0
+
+for char in a:
+    if char == "a" or char == "b" or char == "i":
+        count += 1
+
+print(count)
+
+
+Описание: считает количество букв a, b, i в строке.
+Пример ввода: abracad5bra
+Пример вывода: 6
+
+Создание списка и вывод первых пяти элементов
+Файл: task_6_first_five.py
+
+numbers = []
+
+for i in range(1, 11):
+    numbers.append(i)
+
+for i in range(5):
+    print(numbers[i])
+
+
+Описание: создаёт список от 1 до 10, выводит первые 5 элементов.
+Пример вывода: 1 2 3 4 5
+
+Сравнение сумм двух списков
+Файл: task_7_compare_sums.py
+
+list1 = list(map(int, input().split()))
+list2 = list(map(int, input().split()))
+
+sum1 = sum(list1)
+sum2 = sum(list2)
+
+if sum1 > sum2:
+    print(1)
+else:
+    print(2)
+
+
+Описание: выводит номер списка, сумма которого больше.
+Пример ввода:
+1 2 3 4 5 6 7 8 9 10 1
+2 3 4 5 6 7 8 9 10 12
+Пример вывода: 2
+
+Структура проекта
+
+python_lists_strings_practice/
+│
+├── task_1_even_indexes.py
+├── task_2_average.py
+├── task_3_only_letters.py
+├── task_4_count_symbol.py
+├── task_5_count_abi.py
+├── task_6_first_five.py
+├── task_7_compare_sums.py
+└── README.md
